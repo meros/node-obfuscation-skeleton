@@ -1,0 +1,7 @@
+{
+  "extends": ["airbnb-base", "airbnb-flow"],
+  "parser": "babel-eslint",
+  "rules": {
+    "strict": 0
+  }
+}
