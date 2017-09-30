@@ -1,6 +1,6 @@
 {
   "name": "@meros/obfuscation-skeleton",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "alexander.schrab@gmail.com",
   "license": "MIT",
   "private": false,
@@ -10,7 +10,10 @@
   "engines": {
     "node": ">=4"
   },
-  "files": ["/bin/**/*.js", "/lib/**/*.js"],
+  "files": [
+    "/bin/**/*.js",
+    "/lib/**/*.js"
+  ],
   "scripts": {
     "prepublishOnly": "yarn build",
     "start": "node lib/main.js",
