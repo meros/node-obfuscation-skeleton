@@ -1,6 +1,6 @@
 {
   "name": "@meros/server-skeleton",
-  "version": "0.0.10",
+  "version": "1.0.0",
   "author": "alexander.schrab@gmail.com",
   "license": "MIT",
   "private": false,
@@ -10,7 +10,10 @@
   "engines": {
     "node": ">=4"
   },
-  "files": ["/bin/**/*.js", "/build/**/*.js"],
+  "files": [
+    "/bin/**/*.js",
+    "/build/**/*.js"
+  ],
   "scripts": {
     "prepublishOnly": "yarn build",
     "start": "node build/main.js",
