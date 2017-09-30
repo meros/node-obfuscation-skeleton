@@ -2,7 +2,7 @@
 
 import express from 'express';
 
-import getString from './test';
+import getString from './internalmodule';
 
 const app = express();
 
@@ -12,5 +12,5 @@ app.get('/', (req, res) => {
 
 app.listen(3000, () => {
   // eslint-disable-next-line no-console
-  console.log('Example app listening on port 3000!');
+  console.log('This app is a web server listening on port 3000!');
 });

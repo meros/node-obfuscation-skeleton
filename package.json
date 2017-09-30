@@ -1,23 +1,20 @@
 {
-  "name": "@meros/server-skeleton",
+  "name": "@meros/obfuscated-skeleton",
   "version": "1.0.0",
   "author": "alexander.schrab@gmail.com",
   "license": "MIT",
   "private": false,
-  "description": "A skeleton for servers",
-  "repository": "https://github.com/meros/node-server-skeleton",
+  "description": "A skeleton for proprietary applications with only obfuscated code in npm",
+  "repository": "https://github.com/meros/node-obfuscated-skeleton",
   "engineStrict": true,
   "engines": {
     "node": ">=4"
   },
-  "files": [
-    "/bin/**/*.js",
-    "/build/**/*.js"
-  ],
+  "files": ["/bin/**/*.js", "/lib/**/*.js"],
   "scripts": {
     "prepublishOnly": "yarn build",
-    "start": "node build/main.js",
-    "build": "babel src --out-dir lib --source-maps && webpack",
+    "start": "node lib/main.js",
+    "build": "webpack",
     "debug": "node --inspect lib/main.js",
     "lint": "eslint .",
     "format": "prettier --write src/**/*.js",
@@ -28,14 +25,14 @@
     "express": "^4.16.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
     "babel-eslint": "^8.0.1",
+    "babel-loader": "^7.1.2",
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
     "babel-preset-env": "^1.6.0",
-    "eslint": "^4.7.2",
+    "eslint": "^4.8.0",
     "eslint-config-airbnb-base": "^12.0.1",
     "eslint-config-airbnb-flow": "^1.0.2",
-    "eslint-plugin-import": "^2.7.0",
     "flow": "^0.2.3",
     "prettier-eslint": "^8.2.0",
     "webpack": "^3.6.0",
@@ -44,6 +41,6 @@
     "yarn": "^1.1.0"
   },
   "bin": {
-    "server-skeleton": "./bin/server-skeleton.js"
+    "obfuscation-skeleton": "./bin/obfuscation-skeleton.js"
   }
 }
