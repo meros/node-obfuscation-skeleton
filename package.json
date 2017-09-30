@@ -10,18 +10,15 @@
   "engines": {
     "node": ">=4"
   },
-  "files": [
-    "/bin/**/*.js",
-    "/build/**/*.js"
-  ],
+  "files": ["/bin/**/*.js", "/build/**/*.js"],
   "scripts": {
-    "prepublish": "in-publish && yarn build || true",
-    "start": "node lib/main.js",
-    "build": "babel src --out-dir lib && webpack",
+    "prepublishOnly": "yarn build",
+    "start": "node build/main.js",
+    "build": "babel src --out-dir lib --source-maps && webpack",
     "debug": "node --inspect lib/main.js",
     "lint": "eslint .",
     "format": "prettier --write src/**/*.js",
-    "dev": "nodemon --watch src --exec 'yarn build --source-maps && yarn debug'",
+    "dev": "nodemon --watch src --exec 'yarn build && yarn debug'",
     "test": "yarn lint"
   },
   "dependencies": {
@@ -37,9 +34,6 @@
     "eslint-config-airbnb-flow": "^1.0.2",
     "eslint-plugin-import": "^2.7.0",
     "flow": "^0.2.3",
-    "glob": "^7.1.2",
-    "in-publish": "^2.0.0",
-    "javascript-obfuscator": "^0.11.2",
     "prettier-eslint": "^8.2.0",
     "webpack": "^3.6.0",
     "webpack-node-externals": "^1.6.0",
