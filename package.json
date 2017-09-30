@@ -1,11 +1,11 @@
 {
-  "name": "@meros/obfuscated-skeleton",
+  "name": "@meros/obfuscation-skeleton",
   "version": "1.0.0",
   "author": "alexander.schrab@gmail.com",
   "license": "MIT",
   "private": false,
   "description": "A skeleton for proprietary applications with only obfuscated code in npm",
-  "repository": "https://github.com/meros/node-obfuscated-skeleton",
+  "repository": "https://github.com/meros/node-obfuscation-skeleton",
   "engineStrict": true,
   "engines": {
     "node": ">=4"
