@@ -14,7 +14,8 @@
     "debug": "node --inspect lib/main.js",
     "lint": "eslint .",
     "format": "prettier --write src/**/*.js",
-    "dev": "nodemon --watch src --exec 'yarn build --source-maps && yarn debug'"
+    "dev": "nodemon --watch src --exec 'yarn build --source-maps && yarn debug'",
+    "test": "yarn lint"
   },
   "dependencies": {
     "express": "^4.16.0"
