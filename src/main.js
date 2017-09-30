@@ -2,10 +2,12 @@
 
 import express from 'express';
 
+import getString from './test';
+
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send('Hello World!');
+  res.send(getString());
 });
 
 app.listen(3000, () => {

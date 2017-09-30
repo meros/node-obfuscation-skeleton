@@ -8,12 +8,13 @@
   "repository": "https://github.com/meros/node-server-skeleton",
   "engineStrict": true,
   "engines": {
-    "node": ">=6.10"
+    "node": ">=4"
   },
+  "files": ["/bin/**/*.js", "/build/**/*.js"],
   "scripts": {
     "prepublish": "in-publish && yarn build || true",
     "start": "node lib/main.js",
-    "build": "babel src --out-dir lib",
+    "build": "babel src --out-dir lib && webpack",
     "debug": "node --inspect lib/main.js",
     "lint": "eslint .",
     "format": "prettier --write src/**/*.js",
@@ -33,9 +34,13 @@
     "eslint-config-airbnb-flow": "^1.0.2",
     "eslint-plugin-import": "^2.7.0",
     "flow": "^0.2.3",
+    "glob": "^7.1.2",
     "in-publish": "^2.0.0",
     "javascript-obfuscator": "^0.11.2",
     "prettier-eslint": "^8.2.0",
+    "webpack": "^3.6.0",
+    "webpack-node-externals": "^1.6.0",
+    "webpack-obfuscator": "^0.11.2",
     "yarn": "^1.1.0"
   },
   "bin": {
