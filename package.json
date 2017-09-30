@@ -1,6 +1,6 @@
 {
   "name": "@meros/server-skeleton",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "alexander.schrab@gmail.com",
   "license": "MIT",
   "private": false,
@@ -8,7 +8,7 @@
   "repository": "https://github.com/meros/node-server-skeleton",
   "scripts": {
     "//": "Utility scripts",
-    "prepare": "yarn build",
+    "prepublish": "in-publish && yarn build || true",
     "start": "node lib/main.js",
     "build": "babel src --out-dir lib",
     "debug": "node --inspect lib/main.js",
@@ -30,10 +30,11 @@
     "eslint-config-airbnb-flow": "^1.0.2",
     "eslint-plugin-import": "^2.7.0",
     "flow": "^0.2.3",
+    "in-publish": "^2.0.0",
     "prettier-eslint": "^8.2.0",
     "yarn": "^1.1.0"
   },
   "bin": {
-    "babel-server-skeleton": "./bin/server-skeleton.js"
+    "server-skeleton": "./bin/server-skeleton.js"
   }
 }
