@@ -1,13 +1,16 @@
 {
   "name": "@meros/server-skeleton",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "alexander.schrab@gmail.com",
   "license": "MIT",
   "private": false,
   "description": "A skeleton for servers",
   "repository": "https://github.com/meros/node-server-skeleton",
+  "engineStrict": true,
+  "engines": {
+    "node": ">=6.10"
+  },
   "scripts": {
-    "//": "Utility scripts",
     "prepublish": "in-publish && yarn build || true",
     "start": "node lib/main.js",
     "build": "babel src --out-dir lib",
