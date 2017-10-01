@@ -1,6 +1,6 @@
 {
   "name": "@meros/obfuscation-skeleton",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "alexander.schrab@gmail.com",
   "license": "MIT",
   "private": false,
@@ -25,7 +25,7 @@
     "test": "yarn lint"
   },
   "dependencies": {
-    "@meros/obfuscation-skeleton-react-app": "^0.0.1",
+    "@meros/obfuscation-skeleton-react-app": "^1.0.3",
     "express": "^4.16.0"
   },
   "devDependencies": {

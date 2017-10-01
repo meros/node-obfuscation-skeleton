@@ -1,12 +1,12 @@
 {
   "name": "@meros/obfuscation-skeleton-react-app",
-  "version": "0.0.1",
+  "version": "1.0.3",
   "author": "alexander.schrab@gmail.com",
   "license": "MIT",
   "private": false,
   "main": "/index.js",
   "files": [
-    "index.js",
+    "/index.js",
     "/build/**"
   ],
   "scripts": {
