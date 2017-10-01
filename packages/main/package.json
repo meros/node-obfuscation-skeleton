@@ -1,17 +1,19 @@
 {
   "name": "@meros/obfuscation-skeleton",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "alexander.schrab@gmail.com",
   "license": "MIT",
   "private": false,
-  "description":
-    "A skeleton for proprietary applications with only obfuscated code in npm",
+  "description": "A skeleton for proprietary applications with only obfuscated code in npm",
   "repository": "https://github.com/meros/node-obfuscation-skeleton",
   "engineStrict": true,
   "engines": {
     "node": ">=4"
   },
-  "files": ["/bin/**/*.js", "/lib/**/*.js"],
+  "files": [
+    "/bin/**/*.js",
+    "/lib/**/*.js"
+  ],
   "scripts": {
     "prepublishOnly": "yarn build",
     "start": "node lib/main.js",
@@ -23,8 +25,8 @@
     "test": "yarn lint"
   },
   "dependencies": {
-    "express": "^4.16.0",
-    "@meros/obfuscation-skeleton-react-app": "*"
+    "@meros/obfuscation-skeleton-react-app": "^0.0.1",
+    "express": "^4.16.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -33,8 +35,6 @@
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
     "babel-preset-env": "^1.6.0",
     "eslint": "^4.8.0",
-    "eslint-config-airbnb-base": "^12.0.1",
-    "eslint-config-airbnb-flow": "^1.0.2",
     "flow": "^0.2.3",
     "prettier-eslint": "^8.2.0",
     "webpack": "^3.6.0",
